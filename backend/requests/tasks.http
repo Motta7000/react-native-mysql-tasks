@@ -1,0 +1,30 @@
+@api = http://192.168.1.19:3000/tasks
+
+GET {{api}}
+###
+POST {{api}}
+
+### fddfadsad
+GET {{api}}/2
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title":"hacer tarea",
+    "description":"bla bla bla bla"
+}
+###
+DELETE {{api}}/1
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "id":"1",
+    "title":"jajaja",
+    "description":"sas"
+}
